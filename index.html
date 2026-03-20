@@ -1,85 +1,152 @@
 <!DOCTYPE html><html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Грузоперевозки</title>
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; }
-    header { background:#1f2937; color:white; padding:20px; text-align:center; }
-    nav { background:#111827; padding:10px; text-align:center; }
-    nav a { color:white; margin:0 15px; text-decoration:none; }
-    .hero { padding:60px; text-align:center; background:#e5e7eb; }
-    .hero h1 { font-size:40px; }
-    .section { padding:40px; text-align:center; }
-    .cards { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
-    .card { background:#f9fafb; padding:20px; border-radius:10px; width:250px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
-    footer { background:#1f2937; color:white; text-align:center; padding:20px; }
-    button { padding:10px 20px; background:#2563eb; color:white; border:none; border-radius:5px; cursor:pointer; }
-  </style>
-</head>
-<body><header>
-  <h1>Грузоперевозки в Черноморске</h1>
-  <p>Быстро, надежно, доступно</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Грузоперевозки Черноморск недорого</title>
+<meta name="description" content="Грузоперевозки Черноморск. Переезды, грузчики, доставка. Недорого и быстро. Звоните!"><style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  color:white;
+  background:url('https://images.unsplash.com/photo-1501706362039-c6e80948bb0c') no-repeat center/cover;
+}
+
+.overlay {
+  background:rgba(0,0,0,0.6);
+}
+
+header {
+  text-align:center;
+  padding:40px 20px;
+}
+
+nav {
+  text-align:center;
+  padding:15px;
+}
+
+nav a {
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.hero {
+  text-align:center;
+  padding:80px 20px;
+}
+
+.hero h1 {font-size:36px;}
+
+.btn {
+  display:inline-block;
+  margin:10px;
+  padding:15px 25px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.call {background:#16a34a;}
+.viber {background:#7360f2;}
+
+.btn:hover {transform:scale(1.1);} 
+
+.section {
+  background:white;
+  color:black;
+  margin:20px;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.card {
+  background:#f9fafb;
+  padding:20px;
+  border-radius:15px;
+  width:250px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.card:hover {transform:translateY(-5px);} 
+
+.price {
+  font-size:20px;
+  font-weight:bold;
+  color:#16a34a;
+}
+
+.floating {
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.pulse {
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {transform:scale(1);} 
+  50% {transform:scale(1.1);} 
+  100% {transform:scale(1);} 
+}
+
+</style></head><body>
+<div class="overlay"><header>
+  <h1>Грузоперевозки Черноморск</h1>
+  <p>Быстро • Недорого • С грузчиками</p>
 </header><nav>
   <a href="#services">Услуги</a>
-  <a href="#about">О нас</a>
+  <a href="#price">Цены</a>
   <a href="#contact">Контакты</a>
 </nav><section class="hero">
-  <h1>Перевезем ваш груз без проблем</h1>
-  <p>Звоните в любое время — подберём машину с грузчиками</p>
-  <button onclick="window.location.href='viber://chat?number=380688923541'">Написать в Viber</button>
+  <h1>Перевезем ваш груз за 30–60 минут</h1>
+  <p>Работаем 24/7</p>
+  <a href="tel:+380688923541" class="btn call pulse">📞 Позвонить</a>
+  <a href="viber://chat?number=380688923541" class="btn viber">💬 Viber</a>
 </section><section id="services" class="section">
   <h2>Наши услуги</h2>
   <div class="cards">
-    <div class="card">
-      <h3>Квартирные переезды</h3>
-      <p>Быстро и аккуратно перевезем вещи</p>
-    </div>
-    <div class="card">
-      <h3>Коммерческие перевозки</h3>
-      <p>Доставка товаров для бизнеса</p>
-    </div>
-    <div class="card">
-      <h3>Междугородние перевозки</h3>
-      <p>Работаем по области</p>
-    </div>
+    <div class="card"><h3>Переезды</h3><p>Квартиры и офисы</p></div>
+    <div class="card"><h3>Доставка</h3><p>Товары и грузы</p></div>
+    <div class="card"><h3>Грузчики</h3><p>Аккуратная работа</p></div>
   </div>
-</section><section class="section">
-  <h2>Почему выбирают нас</h2>
+</section><section id="price" class="section">
+  <h2>Цены</h2>
   <div class="cards">
-    <div class="card">
-      <h3>Быстрый выезд</h3>
-      <p>Подача за 30–60 минут</p>
-    </div>
-    <div class="card">
-      <h3>Доступные цены</h3>
-      <p>Без скрытых платежей</p>
-    </div>
-    <div class="card">
-      <h3>Аккуратность</h3>
-      <p>Бережная перевозка</p>
-    </div>
+    <div class="card"><h3>Газель</h3><p class="price">от 400 грн</p></div>
+    <div class="card"><h3>Грузчик</h3><p class="price">от 150 грн/час</p></div>
+    <div class="card"><h3>Минимальный заказ</h3><p class="price">от 2 часов</p></div>
   </div>
 </section><section class="section">
   <h2>Отзывы</h2>
   <div class="cards">
-    <div class="card"><p>Очень быстро и качественно</p></div>
-    <div class="card"><p>Доставили без повреждений</p></div>
-    <div class="card"><p>Отличные цены</p></div>
+    <div class="card">⭐⭐⭐⭐⭐<p>Очень быстро!</p></div>
+    <div class="card">⭐⭐⭐⭐⭐<p>Все аккуратно</p></div>
+    <div class="card">⭐⭐⭐⭐⭐<p>Рекомендую</p></div>
   </div>
-</section><section id="about" class="section">
-  <h2>О компании</h2>
-  <p>Опыт более 5 лет. Работаем быстро и надежно.</p>
 </section><section id="contact" class="section">
   <h2>Контакты</h2>
-  <p>Телефон: <a href="tel:+380688923541">+38 068 892 35 41</a></p>
-</section><footer>
-  <p>© 2026 Грузоперевозки</p>
-</footer><!-- КНОПКИ --><div style="position:fixed; bottom:20px; right:20px; display:flex; flex-direction:column; gap:10px; z-index:999;"><a href="tel:+380688923541"
-style="background:#16a34a; color:white; padding:15px 20px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 10px rgba(0,0,0,0.2);"> 📞 Позвонить </a>
-
-<a href="viber://chat?number=380688923541"
-style="background:#7360f2; color:white; padding:15px 20px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 10px rgba(0,0,0,0.2);"> 💬 Viber </a>
-
-</div></body>
+  <p>📞 +38 068 892 35 41</p>
+  <p><a href="tel:+380688923541">Позвонить сейчас</a></p>
+</section><div class="floating">
+  <a href="tel:+380688923541" class="btn call pulse">📞</a>
+  <a href="viber://chat?number=380688923541" class="btn viber">💬</a>
+</div></div>
+</body>
 </html>
